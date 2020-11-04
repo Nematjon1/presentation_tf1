@@ -1,40 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>Présentation TF1</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            L'application
+            <div>
+              <img height="600" data-src="img/logo.jpg" />
+            </div>
+          </section>
+          <section>
+            News
+            <div>
+              <img height="600" data-src="img/NEWS.png" />
+            </div>
+          </section>
+          <section>
+            Outils
+            <div>
+              <img height="600" data-src="img/OUTILS.png" />
+            </div>
+          </section>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <section>
+          <section>Les technologies</section>
+          <section data-background-iframe="https://reactnative.dev/"></section>
+          <section>
+            Expo
+            <div>
+              <img class="r-stretch" height="400" data-src="img/expo.png" />
+            </div>
+          </section>
+          <section>
+            Client
+            <div>
+              <img class="r-stretch" height="400" data-src="img/client.png" />
+            </div>
+          </section>
+          <section>
+            CLI
+            <div>
+              <img class="r-stretch" height="400" data-src="img/cli.png" />
+            </div>
+          </section>
+          <section
+            data-background-video="img/snack-example.mp4"
+            data-background-video-loop
+            data-background-video-muted
+          ></section>
+          <section>
+            SDK
+            <div>
+              <img height="600" data-src="img/sdk.png" />
+            </div>
+          </section>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section>
+          <section>Les stratégies</section>
+          <section>
+            <div>Test</div>
+            <ul>
+              <li>Groupe Alpha (2 personnes)</li>
+              <li>Groupe Beta (60 personnes)</li>
+              <li>Groupe Prod (1200 personnes)</li>
+            </ul>
+          </section>
+          <section>
+            <div>Analytics</div>
+            <ul>
+              <li>Sentry</li>
+              <li>Amplitude</li>
+              <li>Google Analytics</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          Le build
+          <div>
+            <img height="600" data-src="img/release.png" />
+          </div>
+        </section>
+
+        <section>
+          La protection
+          <div>
+            <img
+              height="400"
+              data-src="img/apps-without-protection-policies.png"
+            />
+            <img
+              height="400"
+              data-src="img/apps-with-protection-policies.png"
+            />
+          </div>
+        </section>
+
+        <section>
+          Fait avec <a href="https://revealjs.com/">revealjs</a>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
